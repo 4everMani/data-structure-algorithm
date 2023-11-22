@@ -50,7 +50,22 @@ using Patterns;
 //Triangle.Print(5);
 #endregion
 
-#region Onverted Triangle Pattern
+#region Inverted Triangle Pattern
 // row = 5
-InvertedTriangle.Print(5);
+//InvertedTriangle.Print(5);
+#endregion
+
+#region Continuous Numeric Pyramid
+// row = 5
+//ContinuousNumericPyramid.Print(5);
+#endregion
+
+#region Rotated Numeric Pyramid
+// row = 4
+//RotatedNumberPyramid.Print(4);
+#endregion
+
+#region Palindrome Triangle Pattern
+// row = 4
+PalindromeTriangle.Print(4);
 #endregion

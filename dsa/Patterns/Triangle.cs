@@ -14,7 +14,7 @@ namespace Patterns
             for (int i = 0; i < row; i++)
             {
                 isRowEven = i == 0 || i % 2 == 0;
-                for (int j = 0; j < (row - 1) + i; j++) 
+                for (int j = 0; j <= (row - 1) + i; j++) 
                 {
                     var isColEven = j == 0 || j % 2 == 0;
                     if (isColEven == isRowEven) 
