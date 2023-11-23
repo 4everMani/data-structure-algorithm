@@ -3,7 +3,7 @@ using Patterns;
 
 
 
-#region SolidPatterns
+//#region SolidPatterns
 // Solid Rectangle Pattern 
 
 // row = 3, column = 5
@@ -11,9 +11,9 @@ using Patterns;
 
 // row = 5, column = 5
 //SolidRectangle.Print(5, 5);
-#endregion
+//#endregion
 
-#region Hollow Rectangle
+//#region Hollow Rectangle
 
 // row = 3, column = 5
 //HollowPattern.Print(3, 5);
@@ -23,49 +23,59 @@ using Patterns;
 
 // row = 6, column = 8
 //HollowPattern.Print(6, 8);
-#endregion
+//#endregion
 
-#region Half Pyramid
+//#region Half Pyramid
 // row = 6
 //HalfPyramid.Print(6);
-#endregion
+//#endregion
 
-#region Inverted Pyramid
+//#region Inverted Pyramid
 // row = 6
 //InvertedPyramid.Print(6);
-#endregion
+//#endregion
 
-#region Numeric Half Pyramid
+//#region Numeric Half Pyramid
 // row = 6
 //NumericHalfPyramid.Print(6);
-#endregion
+//#endregion
 
-#region Inverted Numeric Half Pyramid
+//#region Inverted Numeric Half Pyramid
 // row = 6
 //InvertedNumericHalfPyramid.Print(6);
-#endregion
+//#endregion
 
-#region Triangle Pattern
+//#region Triangle Pattern
 // row = 5
-//Triangle.Print(5);
-#endregion
+Triangle.Print(8);
+//#endregion
 
-#region Inverted Triangle Pattern
+//#region Inverted Triangle Pattern
 // row = 5
 //InvertedTriangle.Print(5);
-#endregion
+//#endregion
 
-#region Continuous Numeric Pyramid
+//#region Continuous Numeric Pyramid
 // row = 5
 //ContinuousNumericPyramid.Print(5);
-#endregion
+//#endregion
 
-#region Rotated Numeric Pyramid
+//#region Rotated Numeric Pyramid
 // row = 4
 //RotatedNumberPyramid.Print(4);
-#endregion
+//#endregion
 
-#region Palindrome Triangle Pattern
+//#region Palindrome Triangle Pattern
 // row = 4
-PalindromeTriangle.Print(4);
-#endregion
+//PalindromeTriangle.Print(4);
+//#endregion
+
+//#region Alphabet Pyramid
+// row = 4
+//AlphabetPyramid.Print(4);
+//#endregion
+
+//#region Continuous Alphabet Pyramid
+// row = 4
+//ContinuousAlphabetPyramid.Print(4);
+//#endregion
