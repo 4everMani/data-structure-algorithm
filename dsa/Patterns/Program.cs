@@ -47,12 +47,12 @@ using Patterns;
 
 //#region Triangle Pattern
 // row = 5
-Triangle.Print(8);
+//Triangle.Print(5);
 //#endregion
 
 //#region Inverted Triangle Pattern
 // row = 5
-//InvertedTriangle.Print(5);
+//InvertedTriangle.Print(6);
 //#endregion
 
 //#region Continuous Numeric Pyramid
@@ -78,4 +78,14 @@ Triangle.Print(8);
 //#region Continuous Alphabet Pyramid
 // row = 4
 //ContinuousAlphabetPyramid.Print(4);
+//#endregion
+
+//#region Solid diamond
+// row = 8
+//SolidDiamond.Print(8);
+//#endregion
+
+//#region Hollow diamond
+// row = 5
+HollowDiamond.Print(5);
 //#endregion

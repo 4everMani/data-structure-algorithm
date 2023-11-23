@@ -10,31 +10,50 @@ namespace Patterns
     {
         public static void Print(int row)
         {
-            var isRowEven = false;
-            for (int i = 0; i < row; i++)
+            for(int i = 0; i < row; i++)
             {
-                isRowEven = i == 0 || i % 2 == 0;
-                for (int j = 0; j < ((row * 2) - 1) - i; j++)
+                // for printing space
+                for(int j = 0; j < i; j++)
                 {
-                    var isColEven = j == 0 || j % 2 == 0;
-                    if (isColEven == isRowEven)
-                    {
-                        if (j >= i)
-                        {
-                            Console.Write("* ");
-                        }
-                        else
-                        {
-                            Console.Write("  ");
-                        }
-                    }
-                    else
-                    {
-                        Console.Write("  ");
-                    }
+                    Console.Write(" ");
+                }
+
+                // for printing "*"
+
+                for(int k = 0; k < row - i; k++)
+                {
+                    Console.Write("* ");
                 }
                 Console.WriteLine();
             }
         }
+        //public static void Print(int row)
+        //{
+        //    var isRowEven = false;
+        //    for (int i = 0; i < row; i++)
+        //    {
+        //        isRowEven = i == 0 || i % 2 == 0;
+        //        for (int j = 0; j < ((row * 2) - 1) - i; j++)
+        //        {
+        //            var isColEven = j == 0 || j % 2 == 0;
+        //            if (isColEven == isRowEven)
+        //            {
+        //                if (j >= i)
+        //                {
+        //                    Console.Write("* ");
+        //                }
+        //                else
+        //                {
+        //                    Console.Write("  ");
+        //                }
+        //            }
+        //            else
+        //            {
+        //                Console.Write("  ");
+        //            }
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //}
     }
 }
