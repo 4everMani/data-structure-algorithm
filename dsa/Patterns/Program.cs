@@ -87,5 +87,15 @@ using Patterns;
 
 //#region Hollow diamond
 // row = 5
-HollowDiamond.Print(5);
+//HollowDiamond.Print(5);
+//#endregion
+
+//#region Flipped solid diamond
+//// row = 5
+//FlippedSolidDiamond.Print(5);
+//#endregion
+
+//#region Fancy pattern1
+// row = 4
+FancyPattern1.Print(4);
 //#endregion
