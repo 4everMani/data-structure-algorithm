@@ -91,11 +91,26 @@ using Patterns;
 //#endregion
 
 //#region Flipped solid diamond
-//// row = 5
+// row = 5
 //FlippedSolidDiamond.Print(5);
 //#endregion
 
 //#region Fancy pattern1
 // row = 4
-FancyPattern1.Print(4);
+//FancyPattern1.Print(4);
+//#endregion
+
+//#region Alphabet palindrome
+// row = 5
+//AlphabetPalindrome.Print(5);
+//#endregion
+
+//#region Hollow inverted half pyramid
+// row = 6
+//HollowInvertedHalfPyramid.Print(6);
+//#endregion
+
+//#region Hollow full pyramid
+// row = 6
+HollowFullPyramid.Print(6);
 //#endregion
