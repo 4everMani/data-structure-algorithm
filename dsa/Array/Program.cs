@@ -56,5 +56,11 @@ using Array;
 //SortColor.Solution([2, 0, 2, 1, 1, 0]);
 //SortColor.Solution([2, 0, 1]);
 
-RotateArray.Rotate([1, 2, 3, 4, 5, 6, 7], 3);
+//RotateArray.Rotate([1, 2, 3, 4, 5, 6, 7], 3);
+
+//var output = RearrangeArray.Solution([3, 1, -2, -5, 2, -4]);
+//PrintArray.Print(output);
+
+var output = RowAndMaximumOnes.Solution([[0, 0], [1, 1], [0, 0]]);
+PrintArray.Print(output);
 
