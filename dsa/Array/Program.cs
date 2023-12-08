@@ -61,6 +61,10 @@ using Array;
 //var output = RearrangeArray.Solution([3, 1, -2, -5, 2, -4]);
 //PrintArray.Print(output);
 
-var output = RowAndMaximumOnes.Solution([[0, 0], [1, 1], [0, 0]]);
-PrintArray.Print(output);
+//var output = RowAndMaximumOnes.Solution([[0, 0], [1, 1], [0, 0]]);
+//PrintArray.Print(output);
+
+//RotateImage.Solution([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+
+TwoSum.Solution([2, 7, 11, 15], 9);
 
