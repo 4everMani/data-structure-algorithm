@@ -66,5 +66,15 @@ using Array;
 
 //RotateImage.Solution([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
 
-TwoSum.Solution([2, 7, 11, 15], 9);
+//TwoSum.Solution([2, 7, 11, 15], 9);
+
+//PivotIndex.Solution([1, 7, 3, 6, 5, 6]);
+//PivotIndex.Solution([1, 2, 3]);
+//PivotIndex.Solution([2, 1, -1]);
+
+//FindDuplicate.Solution([1, 3, 4, 2, 2]);
+
+//FindMissing2.Solution([1, 3, 5, 3, 4]);
+
+FirstRepeatingElement.Solution([1, 3, 8, 7, 4, 2, 7, 7, 9, 3, 1, 9, 8, 6, 5, 0, 2, 8, 6, 0, 2, 4], 22);
 
