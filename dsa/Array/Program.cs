@@ -76,5 +76,12 @@ using Array;
 
 //FindMissing2.Solution([1, 3, 5, 3, 4]);
 
-FirstRepeatingElement.Solution([1, 3, 8, 7, 4, 2, 7, 7, 9, 3, 1, 9, 8, 6, 5, 0, 2, 8, 6, 0, 2, 4], 22);
+//FirstRepeatingElement.Solution([1, 3, 8, 7, 4, 2, 7, 7, 9, 3, 1, 9, 8, 6, 5, 0, 2, 8, 6, 0, 2, 4], 22);
+
+//CommonElement.Solution([1, 5, 10, 20, 40, 80], [6, 7, 20, 80, 100], [3, 4, 15, 20, 30, 70, 80, 120], 6, 5, 8);
+//CommonElement.Solution([3, 3, 3], [3, 3, 3], [3, 3, 3], 3, 3, 3);
+
+//WavePrint.Solution([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]);
+
+SpiralPrint2DMatrix.Solution([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13,14,15,16]]);
 
