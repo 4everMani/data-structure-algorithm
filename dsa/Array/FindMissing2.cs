@@ -10,6 +10,8 @@ namespace Array
     {
         public static void Solution(int[] nums)
         {
+            // given element will be from 1 to n
+            // and total size of array will be n + 1 ;
             for (int i = 0; i < nums.Length; i++)
             {
                 int indexToVisit = Math.Abs(nums[i]);

@@ -83,5 +83,33 @@ using Array;
 
 //WavePrint.Solution([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]);
 
-SpiralPrint2DMatrix.Solution([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13,14,15,16]]);
+//SpiralPrint2DMatrix.Solution([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13,14,15,16]]);
 
+//AddTwoNumberRepresentedByArray.Solution([1, 2, 3, 4], [5, 6, 7, 8]);
+//AddTwoNumberRepresentedByArray.Solution([9, 9, 9, 9], [2, 2]);
+//AddTwoNumberRepresentedByArray.Solution([9, 9, 9, 9], [1, 1, 1, 1]);
+//AddTwoNumberRepresentedByArray.Solution([0, 9, 0, 0, 3, 5], [2, 2, 7]);
+
+//FactorailOfLargeNumber.Solution(7);
+
+//RemoveDuplicatesFromSortedArray.Solution([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
+//RemoveDuplicatesFromSortedArray.Solution([1, 1, 2]);
+
+//MaximumAverageSubarray_I.Solution([1, 12, -5, -6, 50, 3], 4);
+//MaximumAverageSubarray_I.Solution([-1], 1);
+//MaximumAverageSubarray_I.Solution([0, 4, 0, 3, 2], 1);
+
+//BinarySearch.PrintIndex([1, 3, 5, 7, 9, 76, 88, 99], 8, 9);
+
+//FirstOccuranceInSortedArray.Solution([1, 3, 5, 7, 7, 9,11, 69, 69, 76, 88, 99], 69);
+//FirstOccuranceInSortedArray.Solution([1, 3, 5, 7, 7, 9, 11, 69, 69, 76, 88, 99], 67);
+
+
+//LastOccuranceInSortedArray.Solution([1, 3, 5, 7, 7, 9, 11, 69, 69, 76, 88, 99], 69);
+
+//CountOfOccuranceInSortedArray.Solution([1, 3, 5, 7, 7, 9, 11, 61, 61, 61, 69, 69, 76, 88, 99], 61);
+
+//FindMissingElementInSortedArray.Solution([1, 2, 3, 4, 6, 7, 8, 9]);
+//FindMissingElementInSortedArray.Solution([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+//FindMissingElementInSortedArray.Solution([1, 2, 3, 4, 5, 6, 7, 8, 9, 10,12]);
+FindMissingElementInSortedArray.Solution([ 2, 4, 5, 6, 7, 8, 9]);

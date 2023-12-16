@@ -64,34 +64,34 @@ namespace Array
             Console.WriteLine();
         }
 
-        //public static void Solution(int[] nums)
-        //{
-        //    int left = 0;
-        //    int right = nums.Length - 1;
-        //    int index = 0;
+        public static void OptimizedSolution(int[] nums)
+        {
+            int left = 0;
+            int right = nums.Length - 1;
+            int mid = 0;
 
-        //    while (index <= right)
-        //    {
-        //        if (nums[index] == 0)
-        //        {
-        //            (nums[left], nums[index]) = (nums[index], nums[left]);
-        //            left += 1;
-        //            index += 1;
-        //            continue;
-        //        }
+            while (mid <= right)
+            {
+                if (nums[mid] == 0)
+                {
+                    (nums[left], nums[mid]) = (nums[mid], nums[left]);
+                    left += 1;
+                    mid += 1;
+                }
+                else if (nums[mid] == 2)
+                {
+                    (nums[right], nums[mid]) = (nums[mid], nums[right]);
+                    right -= 1;
+                }
+                else if (nums[mid] == 1)
+                {
+                    mid += 1;
+                }
 
-        //        else if (nums[index] == 2)
-        //        {
-        //            (nums[right], nums[index]) = (nums[index], nums[right]);
-        //            right -= 1;
-        //            continue;
-        //        }
+            }
 
-        //        index += 1;
-        //    }
-
-        //    PrintArray.Print(nums);
-        //    Console.WriteLine();
-        //}
+            PrintArray.Print(nums);
+            Console.WriteLine();
+        }
     }
 }
