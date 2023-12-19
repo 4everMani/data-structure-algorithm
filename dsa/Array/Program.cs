@@ -112,4 +112,18 @@ using Array;
 //FindMissingElementInSortedArray.Solution([1, 2, 3, 4, 6, 7, 8, 9]);
 //FindMissingElementInSortedArray.Solution([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 //FindMissingElementInSortedArray.Solution([1, 2, 3, 4, 5, 6, 7, 8, 9, 10,12]);
-FindMissingElementInSortedArray.Solution([ 2, 4, 5, 6, 7, 8, 9]);
+//FindMissingElementInSortedArray.Solution([ 2, 4, 5, 6, 7, 8, 9]);
+//FindMissingElementInSortedArray.Solution([1, 2, 3, 4, 5, 6, 8, 9]);
+
+//PeakElementInMountainArray.Solution([2, 5, 3]);
+
+//FindPivotElement.Solution([9, 10, 2, 4, 6, 8]);
+//FindPivotElement.Solution([9, 10, 11, 12, 13, 8]);
+//FindPivotElement.Solution([9, 10, 12, 14, 16, 18]);
+//FindPivotElement.Solution([4, 5, 6, 7, 0, 1, 2]);
+
+//SearchInRotatedArray.Solution([9, 10, 11, 12, 13, 8], 8);
+//SearchInRotatedArray.Solution([4, 5, 6, 7, 0, 1, 2], 0);
+
+SquareRoot.Solution(2147395599);
+//SquareRoot.Solution(100);
