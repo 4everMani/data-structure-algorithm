@@ -125,5 +125,24 @@ using Array;
 //SearchInRotatedArray.Solution([9, 10, 11, 12, 13, 8], 8);
 //SearchInRotatedArray.Solution([4, 5, 6, 7, 0, 1, 2], 0);
 
-SquareRoot.Solution(2147395599);
+//SquareRoot.Solution(2147395599);
 //SquareRoot.Solution(100);
+
+//BinarySearchIn2DMatrix.Solution([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], 13);
+//BinarySearchIn2DMatrix.Solution([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20]], 20);
+//BinarySearchIn2DMatrix.Solution([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16], [17, 18, 19, 20]], 15);
+
+//DevideTwoNumber.Solution(-29, 7);
+//DevideTwoNumber.Solution(35, 7);
+//DevideTwoNumber.Solution(24, 1);
+//DevideTwoNumber.Solution(-84, 19);
+
+//FinedIndexInAlmostSortedArray.Solution([10, 3, 40, 20, 50, 80, 70], 40);
+//FinedIndexInAlmostSortedArray.Solution([10, 3, 40, 20, 50, 80, 70], 90);
+//FinedIndexInAlmostSortedArray.Solution([10, 3, 40, 20, 50, 80, 70], 3);
+//FinedIndexInAlmostSortedArray.Solution([10], 100);
+
+OddOccurance.Solution([10, 10, 20, 20, 15, 15, 3, 44, 44]);
+//OddOccurance.Solution([10, 10, 20, 20, 15, 15, 3, 44, 44]);
+OddOccurance.Solution([1, 1, 5, 5, 2, 2, 3, 3, 2, 4, 4]);
+
