@@ -142,7 +142,14 @@ using Array;
 //FinedIndexInAlmostSortedArray.Solution([10, 3, 40, 20, 50, 80, 70], 3);
 //FinedIndexInAlmostSortedArray.Solution([10], 100);
 
-OddOccurance.Solution([10, 10, 20, 20, 15, 15, 3, 44, 44]);
 //OddOccurance.Solution([10, 10, 20, 20, 15, 15, 3, 44, 44]);
-OddOccurance.Solution([1, 1, 5, 5, 2, 2, 3, 3, 2, 4, 4]);
+////OddOccurance.Solution([10, 10, 20, 20, 15, 15, 3, 44, 44]);
+//OddOccurance.Solution([1, 1, 5, 5, 2, 2, 3, 3, 2, 4, 4]);
+
+//BubbleSort.Sort([5, 4, 3, 2, 1]);
+//BubbleSort.Sort([5, 2, 3, 4, 1]);
+//BubbleSort.Sort([5, 4, 3, 2, 1, 10, 9, 8, 7, 6]);
+
+//SelectionSort.Sort([5, 4, 3, 2, 1]);
+SelectionSort.Sort([5, 4, 3, 2, 1, -1, 44, 23, 67,99,8]);
 
