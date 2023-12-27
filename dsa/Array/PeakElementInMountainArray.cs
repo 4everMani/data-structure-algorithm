@@ -1,4 +1,6 @@
-﻿namespace Array
+﻿using System;
+
+namespace Array
 {
     public class PeakElementInMountainArray
     {

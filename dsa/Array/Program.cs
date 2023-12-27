@@ -151,5 +151,20 @@ using Array;
 //BubbleSort.Sort([5, 4, 3, 2, 1, 10, 9, 8, 7, 6]);
 
 //SelectionSort.Sort([5, 4, 3, 2, 1]);
-SelectionSort.Sort([5, 4, 3, 2, 1, -1, 44, 23, 67,99,8]);
+//SelectionSort.Sort([5, 4, 3, 2, 1, -1, 44, 23, 67,99,8]);
+
+//InsertionSort.Sort([5, 4, 3, 2, 1]);
+//InsertionSort.Sort([5, 4, 3, 2, 1, -1, 44, 23, 67, 99, 8]);
+
+//SortListByFirstIndex.Solution();
+
+//FindPairs.Solution([1, 2, 3, 4, 5], 1);
+//FindPairs.Solution([3, 1, 4, 1, 5], 2);
+//FindPairs.Solution([1, 3, 1, 5, 4], 0);
+
+//FindKClosestElement.Solution([1, 2, 3, 4, 5], 4, 3);
+//FindKClosestElement.Solution([1, 2, 3, 4, 5], 4, -1);
+FindKClosestElement.Solution([12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56], 4, 54);
+//FindKClosestElement.Solution([-2, -1, 1, 2, 3, 4, 5], 7, 3);
+//FindKClosestElement.Solution([1, 5, 10], 1, 4);
 

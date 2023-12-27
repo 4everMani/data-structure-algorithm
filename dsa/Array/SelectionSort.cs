@@ -15,6 +15,22 @@ namespace Array
 
         private static int[] Solution(int[] nums)
         {
+           //for (int i = 0; i < nums.Length -1; i++)
+           // {
+           //     int minIndex = -1;
+           //     int minValue = nums[i];
+
+           //     for (int j = i + 1;  j < nums.Length; j++)
+           //     {
+           //         if (nums[j] < minValue)
+           //         {
+           //             minValue = nums[j];
+           //             minIndex = j;
+           //         }
+           //     }
+           //     if (minIndex > -1)
+           //         (nums[i], nums[minIndex]) = (nums[minIndex], nums[i]);
+           // }
             for (int i = 0; i < nums.Length - 1; i++)
             {
                 int minIndex = -1;
