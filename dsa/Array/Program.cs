@@ -164,7 +164,17 @@ using Array;
 
 //FindKClosestElement.Solution([1, 2, 3, 4, 5], 4, 3);
 //FindKClosestElement.Solution([1, 2, 3, 4, 5], 4, -1);
-FindKClosestElement.Solution([12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56], 4, 54);
+//FindKClosestElement.Solution([12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56], 4, 54);
 //FindKClosestElement.Solution([-2, -1, 1, 2, 3, 4, 5], 7, 3);
 //FindKClosestElement.Solution([1, 5, 10], 1, 4);
+
+//ExponentialSearch.Search([12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56], 30);
+
+//-------------- very importent questions of binary search
+
+//AllocateMinimumNumberOfPages.Solution(4, [12, 34, 67, 90], 3);
+//AllocateMinimumNumberOfPages.Solution(3, [15, 17, 20], 2);
+//AllocateMinimumNumberOfPages.Solution(7, [15, 10, 19, 10, 5, 18, 7], 5);
+
+ThePainter_sPartitionProblem_II.Solution([10, 20, 30, 40], 4, 2);
 

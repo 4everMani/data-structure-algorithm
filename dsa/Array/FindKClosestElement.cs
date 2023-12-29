@@ -124,12 +124,12 @@ namespace Array
                 int mid = start + (end - start) / 2;
                 if (arr[mid] >= x)
                 {
-                    maxCloeset = mid; // to find upper bound
+                    maxCloeset = mid; // to find target or closest to target, closet > target
                     end = mid - 1;
                 }
                 else
                 {
-                    lowerClosest = mid;  // to find lower bound
+                    lowerClosest = mid;  // to find closest to target. closest < target
                     start = mid + 1;
                 }
             }
