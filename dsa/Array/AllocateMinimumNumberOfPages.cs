@@ -40,7 +40,7 @@ namespace Array
         public static void Solution(int n, int[] pages, int m)
         {
             //Console.WriteLine(IsValidSolution(pages, 113, m));
-            int totalPages = pages.Sum();
+            int totalPages = pages.Sum(); // using System.Linq
             int ans = -1;
             int start = 0;
             int end = totalPages;

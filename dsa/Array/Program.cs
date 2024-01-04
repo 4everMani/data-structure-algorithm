@@ -176,5 +176,26 @@ using Array;
 //AllocateMinimumNumberOfPages.Solution(3, [15, 17, 20], 2);
 //AllocateMinimumNumberOfPages.Solution(7, [15, 10, 19, 10, 5, 18, 7], 5);
 
-ThePainter_sPartitionProblem_II.Solution([10, 20, 30, 40], 4, 2);
+//ThePainter_sPartitionProblem_II.Solution([10, 20, 30, 40], 4, 2);
+
+//AggressiveCows.Solution([1, 2, 4, 8, 9], 5, 3);
+
+//SearchIn2DMatrix.Solution([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 3);
+
+//FindFirstAndLastOccuranceInSortedArray.Solution([5, 7, 7, 8, 8, 10], 8);
+
+//FindPeakElement.Solution([3, 4, 3, 2, 1]);
+
+//MinimumSpeedToArriveOnTime.Solution([1, 1, 100000], 2.01);
+//MinimumSpeedToArriveOnTime.Solution([69], 4.6);
+
+//FindKthPositiveMissingElement.Solution([2, 3, 4, 7, 11], 5);
+//FindKthPositiveMissingElement.Solution([2], 1);
+
+//FindMinimumInRotatedSortedArrayII.Solution([2, 2, 2, 0, 1]);
+//FindMinimumInRotatedSortedArrayII.Solution([1, 3]);
+
+//KokoEatingBananas.Solution([30, 11, 23, 4, 20], 5);
+
+FindInMountainArray.Solution(3, new MountainArray([1, 2, 3, 4, 5, 3, 1]));
 
