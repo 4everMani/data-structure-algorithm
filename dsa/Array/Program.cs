@@ -1,7 +1,9 @@
 ﻿
 
 
+using System;
 using Array;
+using LinkedList;
 
 // reverse an array
 //var input = new int[] { 10, 20, 30 ,40, 50, 60, 70 };
@@ -197,5 +199,29 @@ using Array;
 
 //KokoEatingBananas.Solution([30, 11, 23, 4, 20], 5);
 
-FindInMountainArray.Solution(3, new MountainArray([1, 2, 3, 4, 5, 3, 1]));
+//FindInMountainArray.Solution(3, new MountainArray([1, 2, 3, 4, 5, 3, 1]));
+
+//EkoSPOJ.Solution([20, 10, 15, 17], 7);
+//EkoSPOJ.Solution([4, 42, 40, 26, 46], 20);
+
+
+
+
+
+
+
+
+// --------------------------- LinkedList-------------------------------------
+//ConvertArrayToLL.Convert2LL([9, 7, 1, 5, 8]);
+
+// LinkedList Traversing, Length
+var ll = new LinkedList<int>();
+ll.Head = ConvertArrayToLL.Convert2LL([9, 7, 1, 5, 8]);
+//ll.Traverse();
+//ll.Length();
+//ll.CheckElementPresent(7);
+//ll.CheckElementPresent(6);
+ll.RemoveHead();
+ll.RemoveTail();
+
 
