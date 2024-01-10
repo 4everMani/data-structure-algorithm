@@ -215,13 +215,36 @@ using LinkedList;
 //ConvertArrayToLL.Convert2LL([9, 7, 1, 5, 8]);
 
 // LinkedList Traversing, Length
-var ll = new LinkedList<int>();
-ll.Head = ConvertArrayToLL.Convert2LL([9, 7, 1, 5, 8]);
+//var ll = new LinkedList<int>();
+//ll.Head = ConvertArrayToLL.Convert2LL([9, 7, 1, 5, 8]);
 //ll.Traverse();
 //ll.Length();
 //ll.CheckElementPresent(7);
 //ll.CheckElementPresent(6);
-ll.RemoveHead();
-ll.RemoveTail();
+//ll.RemoveHead();
+//ll.RemoveTail();
+//ll.RemoveElementAt(6);
+//ll.RemoveElement(1);
+//ll.InsertHead(2);
+//ll.InsertHead(4);
+//ll.InsertTail(2);
+//ll.InsertTail(4);
+//ll.InsertAt(1, 1);
+//ll.InsertAt(2, 99);
+//ll.InsertBeforeValue(5, 88);
+//ll.Traverse();
+
+// Doubly LinkedList
+var dll = new DoublyLinkedList<int>();
+dll.Convert2DLL([2, 4, 5, 6, 7]);
+//dll.DeleteHead();
+//dll.DeleteTail();
+//dll.DeleteAt(5);
+//dll.DeleteByValue(5);
+//dll.InsertBeforeHead(22);
+//dll.InsertBeforeTail(12);
+//dll.InsertBeforeKthElement(6, 3);
+dll.InsertBeforeGivenElement(2, 10);
+dll.Traverse();
 
 

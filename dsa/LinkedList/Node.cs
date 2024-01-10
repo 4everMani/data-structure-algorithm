@@ -12,10 +12,13 @@ namespace LinkedList
 
         public Node<T>? Next { get; set; }
 
+        public Node<T>? Prev { get; set; }
+
         public Node(T value)
         {
             Next = null;
             Value = value;
+            Prev = null;
         }
 
     }

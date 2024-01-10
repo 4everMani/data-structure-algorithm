@@ -68,7 +68,6 @@ namespace LinkedList
         {
             if (Head == null) return Head;
             Head = Head.Next;
-            Traverse();
             return Head;
         }
 
@@ -82,27 +81,171 @@ namespace LinkedList
                 mover = mover.Next;
             }
             mover.Next = null;
-            Traverse();
             return Head;
 
         }
-        //public Node<T>? DeleteNode(T element)
-        //{
-        //    else
-        //    {
-                
 
-        //        var tempNode = mover.Next.Next;
-        //        if (tempNode != null)
-        //        {
-        //            mover.Next = tempNode;
-        //        }
-        //        else mover.Next = null;
-        //    }
-           
+        public Node<T>? RemoveElementAt(int position)
+        {
+            // we will always get one position argument and one head argument
 
-        //    Traverse();
-        //    return Head;
-        //}
+            if (Head == null) return Head;
+            else if (position == 1)
+            {
+                Head = Head.Next;
+            }
+            else 
+            {
+                var count = 0;
+                var mover = Head;
+                var previousNode = Head;
+                while (mover != null)
+                {
+                    count++;
+                    if (count == position)
+                    {
+                        previousNode.Next = mover.Next;
+                        break;
+                    }
+                    previousNode = mover;
+                    mover = mover.Next;
+                }
+            }
+            return Head;   
+        }
+
+        public Node<T>? RemoveElement(T value)
+        {
+            if (Head == null) return Head;
+            else if (Head.Value.Equals(value))
+            {
+                Head = Head.Next;
+                return Head;
+            }
+            var mover = Head;
+            var previousNode = Head;
+
+            while (mover != null)
+            {
+                if (mover.Value.Equals(value))
+                {
+                    previousNode.Next = mover.Next;
+                    break;
+                }
+                previousNode = mover;
+                mover = mover.Next;
+            }
+            return Head;
+        }
+
+        public Node<T>? InsertHead(T value)
+        {
+            if (Head is null) return new Node<T>(value);
+
+            // creating temp node
+            var tempNode = new Node<T>(value);
+            // assigning Head to temp -> next
+            tempNode.Next = Head;
+            // adding new head
+            Head = tempNode;
+            return Head;
+        }
+
+        public Node<T>? InsertTail(T value)
+        {
+            if (Head is null) return new Node<T>(value);
+
+            // creating temp node
+            var tempNode = new Node<T>(value);
+
+            var mover = Head;
+
+            while (mover.Next != null)
+            {
+                mover = mover.Next;
+            }
+            mover.Next = tempNode;
+            return Head;
+        }
+
+        public Node<T>? InsertAt(int position, T value)
+        {
+            // creating new temp node
+            var tempNode = new Node<T>(value);
+
+            // if linkedlist is empty
+            if (Head is null)
+            {
+                if (position == 1)
+                {
+                    return tempNode;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+
+            // if positon is on head
+            else if (position == 1)
+            {
+                tempNode.Next = Head;
+                Head = tempNode;
+                return Head;
+            }
+            else
+            {
+                var mover = Head;
+                var count = 0;
+                while (mover != null)
+                {
+                    count++;
+                    if (count == position - 1)
+                    {
+                        tempNode.Next = mover.Next;
+                        mover.Next = tempNode;
+                        break;
+                    }
+                    mover = mover.Next;
+                }
+                return Head;
+            }
+        }
+
+        public Node<T>? InsertBeforeValue(T value, T newValue)
+        {
+            // creating new temp node
+            var tempNode = new Node<T>(newValue);
+
+            // if linkedlist is empty
+            if (Head is null)
+            {
+                return null;
+            }
+
+            // if positon is on head
+            else if (Head.Value.Equals(value))
+            {
+                tempNode.Next = Head;
+                Head = tempNode;
+                return Head;
+            }
+            else
+            {
+                var mover = Head;
+                while (mover != null)
+                {
+                    if (mover.Next != null && mover.Next.Value.Equals(value))
+                    {
+                        tempNode.Next = mover.Next;
+                        mover.Next = tempNode;
+                        break;
+                    }
+                    mover = mover.Next;
+                }
+                return Head;
+            }
+        }
+
     }
 }
