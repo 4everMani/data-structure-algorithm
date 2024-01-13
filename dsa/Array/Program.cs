@@ -235,8 +235,8 @@ using LinkedList;
 //ll.Traverse();
 
 // Doubly LinkedList
-var dll = new DoublyLinkedList<int>();
-dll.Convert2DLL([2, 4, 5, 6, 7]);
+//var dll = new DoublyLinkedList<int>();
+//dll.Convert2DLL([2, 4, 5, 6, 7]);
 //dll.DeleteHead();
 //dll.DeleteTail();
 //dll.DeleteAt(5);
@@ -244,7 +244,16 @@ dll.Convert2DLL([2, 4, 5, 6, 7]);
 //dll.InsertBeforeHead(22);
 //dll.InsertBeforeTail(12);
 //dll.InsertBeforeKthElement(6, 3);
-dll.InsertBeforeGivenElement(2, 10);
-dll.Traverse();
+//dll.InsertBeforeGivenElement(2, 10);
+//dll.Traverse();
+
+//ReverseDLL.Solution([4, 2, 3, 1, 7]);
+
+//Add2NumbersInLinkedList.Solution([3, 8, 7], [5, 2, 4, 1]);
+//Add2NumbersInLinkedList.Solution([3, 5], [4, 5, 9, 9]);
+
+
+GroupOddAndEven.Solution([1, 3, 4, 2, 5, 6]);
+
 
 
