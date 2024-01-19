@@ -8,6 +8,9 @@ namespace LinkedList
 {
     public class GroupOddAndEven
     {
+        // Group odd postion element and then group even placed element
+        // Input => [1, 3, 4, 2, 5, 6]
+        // Output => [1, 4, 5, 3, 2, 6]
         public static void Solution(int[] nums)
         {
             var ll = ConvertArrayToLL.Convert2LL(nums);

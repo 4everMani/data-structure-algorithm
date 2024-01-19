@@ -17,6 +17,7 @@ namespace LinkedList
                 Console.Write(mover.Value + " ");
                 mover = mover.Next;
             }
+            Console.WriteLine();
         }
     }
 }

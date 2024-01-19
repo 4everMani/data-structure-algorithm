@@ -19,7 +19,7 @@ namespace LinkedList
                 mover.Next = tempNode;
                 mover = tempNode;
             }
-            Console.WriteLine(head.Value);
+            //Console.WriteLine(head.Value);
             return head;
         }
     }

@@ -253,7 +253,27 @@ using LinkedList;
 //Add2NumbersInLinkedList.Solution([3, 5], [4, 5, 9, 9]);
 
 
-GroupOddAndEven.Solution([1, 3, 4, 2, 5, 6]);
+//GroupOddAndEven.Solution([1, 3, 4, 2, 5, 6]);
+
+//LLSortingI.Solution([0, 1, 1, 2, 2, 2, 0, 0, 1]);
+//LLSortingI.Solution([1, 2, 0, 0, 2, 2, 1, 0, 1]);
+
+//RemoveNthElementFromEnd.Solution([1, 2, 3, 4, 5], 1);
+//RemoveNthElementFromEnd.Solution([1, 2, 3, 4, 5], 2);
+//RemoveNthElementFromEnd.Solution([1, 2, 3, 4, 5], 3);
+//RemoveNthElementFromEnd.Solution([1, 2, 3, 4, 5], 4);
+//RemoveNthElementFromEnd.Solution([1, 2, 3, 4, 5], 5);
+
+//ReverseLL.Solution([1, 2, 3, 4, 5]);
+
+//CheckPalindromeLL.Solution([1, 2, 3, 2, 1]);
+//CheckPalindromeLL.Solution([1, 2, 3,3, 2, 1]);
+//CheckPalindromeLL.Solution([1, 2, 3, 2, 3]);
+
+//Add1ToLL.Solution([1, 5, 9]);
+//Add1ToLL.Solution([9, 9, 9]);
+
+FindIntersectionPointInYLL.Solution();
 
 
 
