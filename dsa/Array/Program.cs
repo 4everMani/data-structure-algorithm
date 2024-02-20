@@ -58,7 +58,8 @@ using LinkedList;
 //SortColor.Solution([2, 0, 2, 1, 1, 0]);
 //SortColor.Solution([2, 0, 1]);
 
-//RotateArray.Rotate([1, 2, 3, 4, 5, 6, 7], 3);
+RotateArray.Solution([1, 2, 3, 4, 5, 6, 7], 3);
+// RotateArray.Solution([-1,-100,3,99], 2);
 
 //var output = RearrangeArray.Solution([3, 1, -2, -5, 2, -4]);
 //PrintArray.Print(output);
