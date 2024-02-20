@@ -41,7 +41,18 @@ namespace Array
         //    }
         //}
 
-        public static void Rotate(int[] nums, int k)
+        public static void Solution(int[] nums, int k)
+        {
+            var result = RotateOptimal(nums, k);
+            foreach (var item in result)
+            {
+                Console.Write(item + ", ");
+            }
+        }
+
+        // Time: O(2n)
+        // Space: O(n)
+        public static int[] RotateNaiveI(int[] nums, int k)
         {
             int[] arr = new int[nums.Length];
 
@@ -56,6 +67,83 @@ namespace Array
                 nums[i] = arr[i];
 
             }
+            return nums;
         }
+
+        // Time: O(k * n)
+        private static int[] RotateNaiveII(int[] arr, int k)
+        {
+
+            var n = arr.Length;
+            // if length is 7 and we want 7 rotation then we will get same array
+            // So if rotation is 8 then 7 + 1 rotation i.e. 8 % 7 = 1
+            k = k % n;
+            
+            while(k > 0)
+            {
+                var val = arr[n - 1];
+                var j = n - 1;
+                while (j > 0)
+                {
+                    
+                    arr[j] = arr[j - 1];
+                    j--;
+                }
+                arr[0] = val;
+                k--;
+            } 
+            return arr;
+        }
+
+        // Time: O(n - k) + O(k) + O(n - k) => O(2n - k)
+        // Space: O(n-k)
+        private static int[] RotateNaiveIII(int[] arr, int k)
+        {
+            var n = arr.Length;
+            k = k % n;
+            var temp = new List<int>();
+            for (int i = 0; i < (n-k); i++)
+            {
+                temp.Add(arr[i]);
+            }
+
+            // shifting
+            for (int i = 0; i < k; i++)
+            {
+                arr[i] = arr[(n - k) + i];
+            }
+
+            for (int i = 0 ; i < temp.Count; i++)
+            {
+                arr[k+i] = temp[i];
+            }
+            return arr;
+        }
+
+        // Time: O(2n)
+        private static int[] RotateOptimal(int[] nums, int k)
+        {
+            var n = nums.Length;
+            k = k % n;
+
+            nums = Reverse(nums, 0, (n - k) - 1);
+            nums = Reverse(nums, (n-k), (n - 1));
+            return Reverse(nums, 0 , n-1);
+        }
+
+        private static int[] Reverse(int[] arr, int startIndex, int endIndex)
+        {
+            while(startIndex < endIndex)
+            {
+                var temp = arr[startIndex];
+                arr[startIndex] = arr[endIndex];
+                arr[endIndex] = temp;
+                startIndex++;
+                endIndex--;
+            }
+            return arr;
+        }
+
+
     }
 }
