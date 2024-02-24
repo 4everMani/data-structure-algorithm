@@ -58,7 +58,7 @@ using LinkedList;
 //SortColor.Solution([2, 0, 2, 1, 1, 0]);
 //SortColor.Solution([2, 0, 1]);
 
-RotateArray.Solution([1, 2, 3, 4, 5, 6, 7], 3);
+// RotateArray.Solution([1, 2, 3, 4, 5, 6, 7], 3);
 // RotateArray.Solution([-1,-100,3,99], 2);
 
 //var output = RearrangeArray.Solution([3, 1, -2, -5, 2, -4]);
@@ -170,6 +170,15 @@ RotateArray.Solution([1, 2, 3, 4, 5, 6, 7], 3);
 //FindKClosestElement.Solution([12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56], 4, 54);
 //FindKClosestElement.Solution([-2, -1, 1, 2, 3, 4, 5], 7, 3);
 //FindKClosestElement.Solution([1, 5, 10], 1, 4);
+
+// MoveZerosToEnd.Solution([2, 3, 5, 6, 0, 9, 0, 1, 1, 0, 0, 0]);
+
+// LongestSubarrayWithSumK.Solution([1, 2, 3, 1, 1, 1, 1], 3);
+// LongestSubarrayWithSumK.Solution([1, 2, 3, 1], 1);
+// LongestSubarrayWithSumK.Solution([2, 0, 0, 3], 3);
+// LongestSubarrayWithSumK.Solution([2, 2, 4, 1, 2], 2);
+// LongestSubarrayWithSumK.Solution([-1, 1, 1], 1);
+LongestSubarrayWithSumK.Solution([2, 3, 5], 5);
 
 //ExponentialSearch.Search([12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56], 30);
 
