@@ -283,7 +283,24 @@ LongestSubarrayWithSumK.Solution([2, 3, 5], 5);
 //Add1ToLL.Solution([1, 5, 9]);
 //Add1ToLL.Solution([9, 9, 9]);
 
-// FindIntersectionPointInYLL.Solution();
+//FindIntersectionPointInYLL.Solution();
 
+//FindMiddleElementInALL.Solution([1, 2, 3, 4, 5]);
+//FindMiddleElementInALL.Solution([1, 2, 3, 4, 5, 6]);
+
+//DetectCycleInLL.Solution();
+
+//FindLengthOfLoopInLL.Solution();
+
+//DeleteMiddleNode.Solution([1, 2, 3, 4, 5]);
+//DeleteMiddleNode.Solution([1, 2, 3, 4]);
+
+//StartingPointInLoopInLL.Solution();
+
+//DeleteAllOccurancesOfElementInDLL.Solution([10, 4, 10, 10, 6, 10], 10);
+
+//FindAllPairsHavingGivenSumInSortedDLL.Solution([1, 2, 3, 4, 9], 5);
+
+DeleteDuplicatesInSortedDLL.Solution([1, 1, 1, 2, 3, 3, 4,4,4]);
 
 
