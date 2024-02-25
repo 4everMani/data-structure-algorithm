@@ -21,20 +21,88 @@ namespace Array
         public static void Solution(int[] nums, int target)
         {
 
+            // var result = NaiveSolution(nums, target);
+            var result = BetterSolution(nums, target);
+
+            Console.WriteLine($"{result[0]}, {result[1]}");
+        }
+    
+        // Time: O(n^2)
+        // Space: O(1)
+        private static int[] NaiveSolution(int[] nums, int target)
+        {
+            var output = new int[2];
+
             for (int i = 0; i < nums.Length; i++)
             {
-                int pointer = i + 1;
-
-                while (pointer < nums.Length)
+                for (int j = i + 1; j < nums.Length; j++)
                 {
-                    if (nums[pointer] + nums[i] == target)
+                    if (nums[i] + nums[j] == target)
                     {
-                        Console.WriteLine(i + "," + pointer);
-                        break;
+                        output[0] = nums[i];
+                        output[1] = nums[j];
+                        return output;
                     }
-                    pointer++;
-                } 
+                }
             }
+            return output;
+        }  
+
+
+        // Time: O(n)
+        // Space: O(n)
+        private static int[] BetterSolution(int[] nums, int target)
+        {
+            var output = new int[2];
+            var dict = new Dictionary<int, int>();
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var diff = target - nums[i];
+                if (dict.ContainsKey(diff))
+                {
+                    output[0] = dict[diff];
+                    output[1] = i;
+                    return output;
+                }
+                else if(!dict.ContainsKey(nums[i]))
+                {
+                    dict.Add(nums[i], i);
+                }
+            }
+            
+            return output;
+        }     
+    
+    
+        // This solution will work when we requires elements instead of index
+        // because this method requires sorting which will not work for index;
+        // Time: O(nlogn) + O(n)
+        // Space: O(1)
+        private static int[] OptimalSolution(int[] nums, int target)
+        {
+            var output = new int[2];
+            var i = 0;
+            var j = nums.Length - 1;
+            // Array.Sort(nums);
+            while(i < j)
+            {
+                if (nums[i] + nums[j] == target)
+                {
+                    output[0] = nums[i];
+                    output[1] = nums[j];
+                    return output;
+                }
+                else if(nums[i] + nums[j] > target)
+                {
+                    j--;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            return output;
         }
     }
 }

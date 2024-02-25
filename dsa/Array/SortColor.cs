@@ -66,28 +66,25 @@ namespace Array
 
         public static void OptimizedSolution(int[] nums)
         {
-            int left = 0;
-            int right = nums.Length - 1;
-            int mid = 0;
+            var i = 0;
+            var k = nums.Length - 1;
+            var m = 0;
 
-            while (mid <= right)
+            while (m <= k)
             {
-                if (nums[mid] == 0)
+                if (nums[m] == 0)
                 {
-                    (nums[left], nums[mid]) = (nums[mid], nums[left]);
-                    left += 1;
-                    mid += 1;
+                (nums[i], nums[m]) = (nums[m], nums[i]);
+                i++;
+                
                 }
-                else if (nums[mid] == 2)
+                if (nums[m] == 2)
                 {
-                    (nums[right], nums[mid]) = (nums[mid], nums[right]);
-                    right -= 1;
+                    (nums[k], nums[m]) = (nums[m], nums[k]);
+                    k--;
+                    continue;
                 }
-                else if (nums[mid] == 1)
-                {
-                    mid += 1;
-                }
-
+                m++;
             }
 
             PrintArray.Print(nums);

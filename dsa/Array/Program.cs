@@ -69,7 +69,7 @@ using LinkedList;
 
 //RotateImage.Solution([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
 
-//TwoSum.Solution([2, 7, 11, 15], 9);
+// TwoSum.Solution([2, 7, 11, 15], 9);
 
 //PivotIndex.Solution([1, 7, 3, 6, 5, 6]);
 //PivotIndex.Solution([1, 2, 3]);
@@ -178,10 +178,14 @@ using LinkedList;
 // LongestSubarrayWithSumK.Solution([2, 0, 0, 3], 3);
 // LongestSubarrayWithSumK.Solution([2, 2, 4, 1, 2], 2);
 // LongestSubarrayWithSumK.Solution([-1, 1, 1], 1);
-LongestSubarrayWithSumK.Solution([2, 3, 5], 5);
+// LongestSubarrayWithSumK.Solution([2, 3, 5], 5);
+
+// MajorityElement.Solution([1, 2, 3, 3, 3, 3, 2, 2, 1, 1]);
 
 //ExponentialSearch.Search([12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56], 30);
 
+MaxSubArray.Solution([-2,1,-3,4,-1,2,1,-5,4]);
+MaxSubArray.Solution([5,4,-1,7,8]);
 //-------------- very importent questions of binary search
 
 //AllocateMinimumNumberOfPages.Solution(4, [12, 34, 67, 90], 3);
@@ -301,6 +305,6 @@ LongestSubarrayWithSumK.Solution([2, 3, 5], 5);
 
 //FindAllPairsHavingGivenSumInSortedDLL.Solution([1, 2, 3, 4, 9], 5);
 
-DeleteDuplicatesInSortedDLL.Solution([1, 1, 1, 2, 3, 3, 4,4,4]);
+// DeleteDuplicatesInSortedDLL.Solution([1, 1, 1, 2, 3, 3, 4,4,4]);
 
 
