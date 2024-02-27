@@ -64,4 +64,25 @@ public class MaxSubArray
         }
         return maxValue;
     }
+
+   // This will find subarray
+    private static int OptimalSoluitonII(int[] nums)
+    {
+        int maxValue = int.MinValue;
+        int sum = 0;
+        int left = 0;
+        int right = 0;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (sum == 0) left = i;
+            sum += nums[i];
+            if (sum > maxValue) 
+            {
+                maxValue = sum;
+                right = i;
+            }
+            if (sum < 0) sum = 0;
+        }
+        return maxValue;
+    }
 }

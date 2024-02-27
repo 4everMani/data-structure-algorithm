@@ -184,8 +184,11 @@ using LinkedList;
 
 //ExponentialSearch.Search([12, 16, 22, 30, 35, 39, 42, 45, 48, 50, 53, 55, 56], 30);
 
-MaxSubArray.Solution([-2,1,-3,4,-1,2,1,-5,4]);
-MaxSubArray.Solution([5,4,-1,7,8]);
+// MaxSubArray.Solution([-2,1,-3,4,-1,2,1,-5,4]);
+// MaxSubArray.Solution([5,4,-1,7,8]);
+
+BestTimeToBuyAndSellStock.Solution([7,1,5,3,6,4]);
+BestTimeToBuyAndSellStock.Solution([7,6,4,3,1]);
 //-------------- very importent questions of binary search
 
 //AllocateMinimumNumberOfPages.Solution(4, [12, 34, 67, 90], 3);
