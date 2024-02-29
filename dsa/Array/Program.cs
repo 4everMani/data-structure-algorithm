@@ -187,8 +187,21 @@ using LinkedList;
 // MaxSubArray.Solution([-2,1,-3,4,-1,2,1,-5,4]);
 // MaxSubArray.Solution([5,4,-1,7,8]);
 
-BestTimeToBuyAndSellStock.Solution([7,1,5,3,6,4]);
-BestTimeToBuyAndSellStock.Solution([7,6,4,3,1]);
+// BestTimeToBuyAndSellStock.Solution([7,1,5,3,6,4]);
+// BestTimeToBuyAndSellStock.Solution([7,6,4,3,1]);
+
+// SuperiorElements.Solution([1,2,3,2]);
+// SuperiorElements.Solution([1,2,2,1]);
+// SuperiorElements.Solution([5,4,3]);
+
+// LongestSuccessiveElements.Solution([5, 8, 3, 2, 1, 4]);
+// LongestSuccessiveElements.Solution([15, 6, 2, 1, 16, 4, 2, 29, 9, 12, 8, 5, 14, 21, 8, 12, 17, 16, 6, 26, 3]);
+
+// SetMetrixZeros.Solution([[1,1,1],[1,0,1],[1,1,1]]);
+// SetMetrixZeros.Solution([[0,1,2,0],[3,4,5,2],[1,3,1,5]]);
+SetMetrixZeros.Solution([[1,2,3,4],[5,0,7,8],[0,10,11,12],[13,14,15,0]]);
+
+// SubarraySumEqualsK.Solution([2, 2, 3, 1, 4, 1, 1, 1, 1], 2);
 //-------------- very importent questions of binary search
 
 //AllocateMinimumNumberOfPages.Solution(4, [12, 34, 67, 90], 3);
