@@ -64,5 +64,53 @@ namespace Array
                 startCol++;
             }
         }
+        public static IList<int> SolutionII(int[][] matrix)
+        {
+             var top = 0;
+            var bottom = matrix.Length - 1;
+            var left = 0;
+            var right = matrix[0].Length - 1;
+            IList<int> output = new List<int>();
+
+            while (top <= bottom && left <= right)
+            {
+                // moving left to right
+                for (int i = left; i <= right; i++)
+                {
+                    output.Add(matrix[top][i]);
+                }
+                top++;
+
+                // moving top to bottom
+                for (int i = top; i <= bottom; i ++)
+                {
+                    output.Add(matrix[i][right]);
+                }
+                right--;
+
+                // moving right to left
+                if (top <= bottom)
+                {
+                    for (int i = right; i >= left ; i--)
+                    {
+                        output.Add(matrix[bottom][i]);
+                    }
+                    bottom--;
+                }
+            
+                // moving bottom to top
+                if (left <= right)
+                {
+                    for (int i = bottom; i >= top; i--)
+                    {
+                        output.Add(matrix[i][left]);
+                    }
+                    left++;
+                }
+            }
+            return output;
+        }
     }
 }
+
+
