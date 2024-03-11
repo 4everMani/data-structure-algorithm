@@ -23,7 +23,7 @@ namespace Array
 
         public static void Solution(int[] nums, int k)
         {
-            int res = OptimalSolution(nums, k):
+            int res = OptimalSolution(nums, k);
         }
 
         private static int OptimalSolution(int[] nums, int k)

@@ -199,7 +199,9 @@ using LinkedList;
 
 // SetMetrixZeros.Solution([[1,1,1],[1,0,1],[1,1,1]]);
 // SetMetrixZeros.Solution([[0,1,2,0],[3,4,5,2],[1,3,1,5]]);
-SetMetrixZeros.Solution([[1,2,3,4],[5,0,7,8],[0,10,11,12],[13,14,15,0]]);
+// SetMetrixZeros.Solution([[1,2,3,4],[5,0,7,8],[0,10,11,12],[13,14,15,0]]);
+
+PascalTriangle.Solution(5);
 
 // SubarraySumEqualsK.Solution([2, 2, 3, 1, 4, 1, 1, 1, 1], 2);
 //-------------- very importent questions of binary search
