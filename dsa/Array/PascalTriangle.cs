@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Schema;
 
 namespace Array;
 
@@ -19,33 +20,46 @@ public class PascalTriangle
     public static void Solution(int num)
     {
         // There are 3 variety of questions can be asked in interview
+
         // 1) Given row and colulmn number, give the element
-        PrintElementGivenRowAndColumn(5, 3);
+        //PrintElementGivenRowAndColumn(5, 3);
 
         // 2) Given row number, give all row elements
-        
-        // 3) Given entire Pascal Triangle given a number
-        // List<List<int>> res = PascalTrianglePattern(num);
+        //PrintGivenRow(4);
 
-        // foreach(var nums in res)
-        // {
-        //     foreach(var val in nums)
-        //     {
-        //         System.Console.Write(val + ", ");
-        //     }
-        //     System.Console.WriteLine();
-        // }
+        // 3) Given entire Pascal Triangle given a number
+        List<List<int>> res = PascalTrianglePattern(num);
+
+        foreach (var nums in res)
+        {
+            foreach (var val in nums)
+            {
+                System.Console.Write(val + ", ");
+            }
+            System.Console.WriteLine();
+        }
     }
 
-    // private static List<List<int>> PascalTrianglePattern(int num)
-    // {
-    //     var output = new List<List<int>>();
+    private static List<List<int>> PascalTrianglePattern(int num)
+    {
+        // as we know each row has equal number of column
+        // if num = 5 then row will be start from 1 to 5 and each row will contain col 1 to 5.
+        // therefore we can use PrintElementGivenRowAndColumn() for naive solution
+        // Time complexity will be nearly O(n *n * n)
+        // first 2 n for row and column and last n for finding the element;
 
-    //     for (int i = 0; i < num; i++)
-    //     {
 
-    //     }
-    // }
+        // we will use PrintGivenRow() method
+        // Time: O(n * n) nearly
+        var output = new List<List<int>>();
+
+        for (int i = 1; i <= num; i++)
+        {
+            output.Add(PrintGivenRow(i));
+
+        }
+        return output;
+    }
 
     private static void PrintElementGivenRowAndColumn(int row, int col)
     {
@@ -72,5 +86,37 @@ public class PascalTriangle
             num /= (i + 1);
         }
         System.Console.WriteLine(num);
+    }
+
+    // Time: O(row)
+    private static List<int> PrintGivenRow(int row)
+    {
+        // We know that evey row contains element equal to row number.
+        // e.g. if row is 5 then it will have 5 element => [1,4,6,4,1]
+        // therefore loop will run from 1 to row;
+
+        // Since we know the row number and total number of column(equal to row)
+        // we can use method PrintElementGivenRowAndColumn(), but it will take O(n) for finding every element
+        // Total compalexity will be O(row * n)
+
+        // We will need different solution
+
+        var list = new List<int>();
+        list.Add(1);
+
+        for (int i = 1; i < row; i++)
+        {
+            var product = list[i - 1] * (row - i);
+            var element = product / i;
+            list.Add(element);
+        }
+
+        //foreach(var element in list)
+        //{
+        //    Console.Write(element + ",");
+        //}
+
+        return list;
+
     }
 }
