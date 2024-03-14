@@ -95,6 +95,9 @@ namespace Array
 
         private static List<int> OptimalSolution(int[] nums)
         {
+            // we need to find number of elements who are more than n/3.
+            // means we need to find the element who are more than 33%.
+            // therefore at max two elements can exists in an array who has more than n/3 frequency.
             var n = nums.Length;
             var count1 = 0;
             var count2 = 0;
