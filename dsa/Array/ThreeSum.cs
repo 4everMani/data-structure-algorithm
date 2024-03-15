@@ -39,7 +39,8 @@ namespace Array
         public static void Solution(int[] nums)
         {
             //IList<IList<int>> result = NaiveSolution(nums);
-            IList<IList<int>> result = BetterSolution(nums);
+            //IList<IList<int>> result = BetterSolution(nums);
+            IList<IList<int>> result = OptimalSolution(nums);
 
             foreach (var item in result)
             {
@@ -119,6 +120,48 @@ namespace Array
                         }
                     }
                     
+                }
+            }
+            return output;
+        }
+
+        // Time: O(nlogn) + O(n^2)
+        // Space: O(2 * no. of triplets)
+        private static IList<IList<int>> OptimalSolution(int[] nums)
+        {
+            var n = nums.Length;
+            System.Array.Sort(nums);
+            var output = new List<IList<int>>();
+            var uniqueTriplets = new HashSet<string>();
+
+            for (int i = 0; i < n - 2; i++)
+            {
+                int j = i + 1;
+                int k = n - 1;
+
+                while(j != k)
+                {
+                    var sum = nums[i] + nums[j] + nums[k];
+
+                    if (sum == 0)
+                    {
+                        var tempTriplet = new List<int> { nums[i], nums[j], nums[k] };
+                        var tempString = string.Empty;
+                        foreach (var item in tempTriplet)
+                        {
+                            tempString += item;
+                        }
+                        if (!uniqueTriplets.Contains(tempString))
+                        {
+                            uniqueTriplets.Add(tempString);
+                            output.Add(tempTriplet);
+                        }
+                        j++;
+                    }
+                    else if (sum > 0) k--;
+                    
+                    else j++;
+
                 }
             }
             return output;

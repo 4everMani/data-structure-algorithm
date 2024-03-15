@@ -203,7 +203,9 @@ using LinkedList;
 
 //PascalTriangle.Solution(5);
 
-ThreeSum.Solution([-1, 0, 1, 2, -1, -4]);
+//ThreeSum.Solution([-1, 0, 1, 2, -1, -4]);
+
+LongestSubarrayWithZeroSum.Solution([1, -1, 0, 0, 1]);
 
 // SubarraySumEqualsK.Solution([2, 2, 3, 1, 4, 1, 1, 1, 1], 2);
 //-------------- very importent questions of binary search
