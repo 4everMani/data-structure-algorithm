@@ -21,7 +21,8 @@ namespace Array
 
         public static void Solution(int[] nums)
         {
-            int longestSubarrayCount = NaiveSolution(nums);
+            //int longestSubarrayCount = NaiveSolution(nums);
+            int longestSubarrayCount = BetterSolution(nums);
             Console.WriteLine(longestSubarrayCount);
         }
 
@@ -46,6 +47,29 @@ namespace Array
             return count;
         }
 
-        
+        private static int BetterSolution(int[] nums)
+        {
+            // never sort an array if you need subarray coz order will be destroyed
+            int n = nums.Length;
+            var dict = new Dictionary<int, int>();
+            var sum = 0;
+            var maxLength = 0;
+            for (int i = 0; i < n; i++)
+            {
+                sum += nums[i];
+
+                if (sum == 0)
+                {
+                    maxLength = Math.Max(maxLength, i + 1);
+                }
+                else if (dict.ContainsKey(sum))
+                {
+                    maxLength = Math.Max(maxLength, i - dict[sum]);
+                }
+                else { dict[sum] = i; }
+            }
+            return maxLength;
+
+        }
     }
 }

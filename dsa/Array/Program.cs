@@ -205,7 +205,9 @@ using LinkedList;
 
 //ThreeSum.Solution([-1, 0, 1, 2, -1, -4]);
 
-LongestSubarrayWithZeroSum.Solution([1, -1, 0, 0, 1]);
+//LongestSubarrayWithZeroSum.Solution([1, -1, 0, 0, 1]);
+
+NoOfSubarrayWithGivenXOR.Solution([4, 2, 2, 6, 4], 6);
 
 // SubarraySumEqualsK.Solution([2, 2, 3, 1, 4, 1, 1, 1, 1], 2);
 //-------------- very importent questions of binary search
