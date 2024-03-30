@@ -32,6 +32,7 @@ public class LongestSuccessiveElements
         nums = nums.Order().ToArray();
         int maxCount = int.MinValue;
         int count = 1;
+        var n = new int[3][];
 
         for(int i = 1; i < nums.Length; i++)
         {

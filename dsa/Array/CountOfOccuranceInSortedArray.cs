@@ -11,7 +11,7 @@ namespace Array
         public static int Solution(int[] nums, int target) 
         { 
             var count = LastOccuranceInSortedArray.Solution(nums,target) -
-                FirstOccuranceInSortedArray.Solution(nums, target);
+                FirstOccurrenceInSortedArray.Solution(nums, target);
             count += 1; // coz lastOccurance = 9 && firstOccurance = 7, count = 9 - 7 + 1
             Console.WriteLine(count);
             return count;

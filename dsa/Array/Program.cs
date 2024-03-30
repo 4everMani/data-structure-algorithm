@@ -207,7 +207,12 @@ using LinkedList;
 
 //LongestSubarrayWithZeroSum.Solution([1, -1, 0, 0, 1]);
 
-NoOfSubarrayWithGivenXOR.Solution([4, 2, 2, 6, 4], 6);
+//NoOfSubarrayWithGivenXOR.Solution([4, 2, 2, 6, 4], 6);
+
+Test.Solution([[1, 1, 1], [1, 0, 1], [1, 1, 1]]);
+
+//Test.Solution([2, 2, 4, 1, 2], 2);
+
 
 // SubarraySumEqualsK.Solution([2, 2, 3, 1, 4, 1, 1, 1, 1], 2);
 //-------------- very importent questions of binary search
