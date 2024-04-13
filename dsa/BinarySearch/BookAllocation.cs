@@ -33,7 +33,7 @@ public class BookAllocation
         if (arr.Length < m) return -1;
         int min = 0;
         int max = 0;
-        int ans = -1;
+
         for(int i = 0; i < arr.Length; i++)
         {
             min = min > arr[i] ? min : arr[i];
@@ -46,12 +46,11 @@ public class BookAllocation
             int studentCount = GetStudentCount(arr, mid);
             if (studentCount <= m)
             {
-                ans = mid;
                 max = mid - 1;
             }
             else min = mid  +1;
         }
-        return ans;
+        return min;
     }
 
     public static int GetStudentCount(int[] arr, int pages)

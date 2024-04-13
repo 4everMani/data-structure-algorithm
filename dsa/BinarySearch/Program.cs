@@ -26,4 +26,4 @@
 // SplitArrayLargestSum.Solution([7,2,5,10,8], 2);
 
 // BookAllocation.Solution([12, 34, 67, 90], 2);
-BookAllocation.Solution([2, 8, 8, 4, 5], 6);
+BookAllocation.Solution([25, 46, 28, 49, 24], 4);
