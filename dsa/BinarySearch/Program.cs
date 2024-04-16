@@ -26,4 +26,10 @@
 // SplitArrayLargestSum.Solution([7,2,5,10,8], 2);
 
 // BookAllocation.Solution([12, 34, 67, 90], 2);
-BookAllocation.Solution([25, 46, 28, 49, 24], 4);
+// BookAllocation.Solution([25, 46, 28, 49, 24], 4);
+
+// MinimizeMaxDistanceToGasStation.Solution([1, 13, 17, 23], 5);
+// MinimizeMaxDistanceToGasStation.Solution([1,2,3,4,5,6,7], 6);
+// MinimizeMaxDistanceToGasStation.Solution([1,2,3,4,5,6,7,8,9,10], 2);
+
+MedianOfTwoSortedArrays.Solution([1, 2], [3, 4]);
