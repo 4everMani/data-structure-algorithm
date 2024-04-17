@@ -32,4 +32,8 @@
 // MinimizeMaxDistanceToGasStation.Solution([1,2,3,4,5,6,7], 6);
 // MinimizeMaxDistanceToGasStation.Solution([1,2,3,4,5,6,7,8,9,10], 2);
 
-MedianOfTwoSortedArrays.Solution([1, 2], [3, 4]);
+// MedianOfTwoSortedArrays.Solution([1, 2], [3, 4]);
+
+// KthElementOfTwoSortedArray.Solution([2, 3, 45], [4, 6, 7, 8], 4);
+// KthElementOfTwoSortedArray.Solution([2, 3, 6, 7, 9], [4, 7, 8, 9, 100  ], 6);
+KthElementOfTwoSortedArray.Solution([2, 3, 6, 7, 9],[1, 4, 8, 10], 4);
