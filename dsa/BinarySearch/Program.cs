@@ -36,4 +36,6 @@
 
 // KthElementOfTwoSortedArray.Solution([2, 3, 45], [4, 6, 7, 8], 4);
 // KthElementOfTwoSortedArray.Solution([2, 3, 6, 7, 9], [4, 7, 8, 9, 100  ], 6);
-KthElementOfTwoSortedArray.Solution([2, 3, 6, 7, 9],[1, 4, 8, 10], 4);
+// KthElementOfTwoSortedArray.Solution([2, 3, 6, 7, 9],[1, 4, 8, 10], 4);
+
+RowWithMost1s.Solution([[ 1,  1,  1 ],[ 0,  0,  1 ],[ 0,  0,  0 ]]);
