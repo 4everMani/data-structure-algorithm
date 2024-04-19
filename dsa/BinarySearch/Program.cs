@@ -38,4 +38,7 @@
 // KthElementOfTwoSortedArray.Solution([2, 3, 6, 7, 9], [4, 7, 8, 9, 100  ], 6);
 // KthElementOfTwoSortedArray.Solution([2, 3, 6, 7, 9],[1, 4, 8, 10], 4);
 
-RowWithMost1s.Solution([[ 1,  1,  1 ],[ 0,  0,  1 ],[ 0,  0,  0 ]]);
+// RowWithMost1s.Solution([[ 1,  1,  1 ],[ 0,  0,  1 ],[ 0,  0,  0 ]]);
+
+// FindPeakElementII.Solution([[10,50,40,30,20],[1,500,2,3,4]]);
+FindPeakElementII.Solution([[2 ,1 ,99,98,22,21,20],[3 ,2 ,1 ,2 ,3 ,4 ,19],[4 ,3 ,2 ,1 ,2 ,3 ,18],[5 ,4 ,3 ,2 ,1 ,2 ,17],[6 ,5 ,4 ,3 ,2 ,1 ,16],[7 ,6 ,5 ,4 ,3 ,2 ,15],[8 ,9 ,10,11,12,13,14]]);
