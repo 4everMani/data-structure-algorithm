@@ -26,10 +26,13 @@ public class ReverseWordsInAString
 
     public  static void Solution(string input)
     {
-        System.Console.WriteLine(NaiveSolution(input));
+        // System.Console.WriteLine(OptimalSolution(input));
+        System.Console.WriteLine(Bruteforece(input));
     }
 
-    private static string NaiveSolution(string input)
+    // Time: O(n)
+    // Space: O(n) for output
+    private static string OptimalSolution(string input)
     {
         var output = string.Empty;
 
@@ -42,7 +45,7 @@ public class ReverseWordsInAString
             if (i < 0) 
             {
                 output += input.Substring(i + 1, j - i);
-                break;
+                i--;
             }
             else if (input[i] == ' ' && input[j] == ' ')
             {
@@ -60,6 +63,51 @@ public class ReverseWordsInAString
                 i--;
             }
         }
-        return output[output.Length - 1] == ' ' ? output.Substring(0, output.Length - 1) : output;
+        return output.TrimEnd();
+    }
+
+    private static string Bruteforece(string input)
+    {
+        var output = string.Empty;
+        var stack = new Stack<string>();
+        var i = 0;
+        var j = 0;
+
+        while(j <= input.Length)
+        {
+            if (j == input.Length)
+            {
+                stack.Push(input[i..j]);
+                break;
+            }
+            else if (input[i] == ' ' && input[j] == ' ') 
+            {
+                i++;
+                j++;
+            }
+            else if (input[i] != ' ' && input[j] == ' ')
+            {
+                stack.Push(input[i..j]);
+                i = j;
+            }
+            else j++;
+        }
+
+        while (stack.Count > 1)
+        {
+            output += stack.Pop();
+            output += " ";
+        }
+        output += stack.Pop();
+        
+        return output.TrimStart();
+
     }
 }
+
+
+
+
+
+
+

@@ -9,4 +9,8 @@
 // PalindromeCheck.Solution("abba");
 
 // ReverseWordsInAString.Solution("a good   example");
-ReverseWordsInAString.Solution("the sky is blue");
+// ReverseWordsInAString.Solution("  hello world  ");
+
+// SubsequenceString.Solution("ahbgdc", "abc");
+
+CheckAnagrams.Solution("ab", "a");
