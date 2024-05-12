@@ -26,9 +26,13 @@ public class ReverseWordsInAString
 
     public  static void Solution(string input)
     {
-        // System.Console.WriteLine(OptimalSolution(input));
-        System.Console.WriteLine(Bruteforece(input));
+        // System.Console.Write(OptimalSolution(input));
+
+        // System.Console.WriteLine(Bruteforece(input));
+        System.Console.WriteLine(BestSolution(input));
     }
+
+    
 
     // Time: O(n)
     // Space: O(n) for output
@@ -44,7 +48,8 @@ public class ReverseWordsInAString
 
             if (i < 0) 
             {
-                output += input.Substring(i + 1, j - i);
+                if (input.Substring(i + 1, j - i) != string.Empty)
+                    output += input.Substring(i + 1, j - i);
                 i--;
             }
             else if (input[i] == ' ' && input[j] == ' ')
@@ -77,8 +82,8 @@ public class ReverseWordsInAString
         {
             if (j == input.Length)
             {
-                stack.Push(input[i..j]);
-                break;
+                if (input[i..j] != string.Empty) stack.Push(input[i..j]);
+                j++;
             }
             else if (input[i] == ' ' && input[j] == ' ') 
             {
@@ -99,9 +104,51 @@ public class ReverseWordsInAString
             output += " ";
         }
         output += stack.Pop();
-        
-        return output.TrimStart();
+        return output;
 
+    }
+
+    private static string BestSolution(string s)
+    {
+        var list = new List<char>();
+
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (list.Count == 0 && s[i] == ' ') continue;
+            else if (list.Count > 1 && list[list.Count - 1] == ' ' && s[i] == ' ') continue;
+            else list.Add(s[i]);
+        }
+
+        // Reversing each word
+        var start = 0;
+        var end = 0;
+        for(; end < list.Count; end++)
+        {
+            if (list[end] == ' ')
+            {
+                Reverse(list, start, end -1);
+                start = end + 1;
+            }
+            else if (end == list.Count - 1) Reverse(list, start, end);
+        }
+        Reverse(list, 0, end - 1);
+        var str = new StringBuilder();
+        int j = list[0] == ' ' ? 1 : 0;
+        for (; j < list.Count; j++)
+        {
+            str.Append(list[j]); 
+        }
+        return str.ToString();
+    }
+
+    private static void Reverse(List<char> list, int start, int end)
+    {
+        while (start <= end)
+        {
+            (list[start], list[end]) = (list[end], list[start]);
+            start++;
+            end--;
+        }
     }
 }
 
