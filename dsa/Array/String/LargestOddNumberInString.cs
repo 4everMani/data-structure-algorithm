@@ -54,7 +54,7 @@ public class LargestOddNumberInString
 
         while (i >= 0)
         {
-            if ((int)num[i] % 2 != 0) return num[0..(i+1)];
+            if (num[i] % 2 != 0) return num[0..(i+1)];
             i--;
         }
         return "";

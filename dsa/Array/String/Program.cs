@@ -31,4 +31,8 @@
 // PatternSearch.Solution("ABCESBEFABCD", "ABCD");
 
 // RotatedString.Solution("abcde", "cdeab");
-RotatedString.Solution("clrwmpkwru", "wmpkwruclr");
+// RotatedString.Solution("clrwmpkwru", "wmpkwruclr");
+
+// LongestCommonPrefix.Solution(["flower","flow","flight"]);
+
+IsomorphicString.Solution("paper", "title");
