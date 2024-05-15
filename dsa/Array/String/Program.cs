@@ -35,4 +35,10 @@
 
 // LongestCommonPrefix.Solution(["flower","flow","flight"]);
 
-IsomorphicString.Solution("paper", "title");
+// IsomorphicString.Solution("paper", "title");
+
+// SortCharactersByFrequency.Solution("trzz");
+
+// RomanToInteger.Solution("MCMXCIV");
+
+StringToInteger.Solution("0-43");

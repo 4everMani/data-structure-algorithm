@@ -1,4 +1,4 @@
-﻿
+﻿using System.Text;
 namespace String;
 
 public class RemoveOutermostParentheses
@@ -38,15 +38,17 @@ public class RemoveOutermostParentheses
     }
 
 // (()())(())(()(()))
-    private static string RemoveOutermostParen(string input)
+    private static string RemoveOutermostParen(string s)
     {
-        var ouput = string.Empty;
-
-        for (int i = 0; i < input.Length; i++)
+        int count = 0;
+        var output = new StringBuilder();
+        for (int i = 0 ; i < s.Length; i++)
         {
-
+            if (s[i] == '(') count++;
+            if (count > 1) output.Append(s[i]);
+            if (s[i] == ')') count--;
         }
-        return ouput;
+        return output.ToString();
     }
 }
 
