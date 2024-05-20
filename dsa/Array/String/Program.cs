@@ -41,4 +41,10 @@
 
 // RomanToInteger.Solution("MCMXCIV");
 
-StringToInteger.Solution("0-43");
+// StringToInteger.Solution("0-43");
+
+// CountNumberOfSubstring.Solution("aba", 2);
+// CountNumberOfSubstring.Solution("abaaca", 1);
+
+// SumOfBeautyOfAllSubstrings.Solution("aabcbaa");
+SumOfBeautyOfAllSubstrings.Solution("xzvfsppsjfbxdwkqe");
