@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "..\LinkedList
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "..\BinarySearch\BinarySearch.csproj", "{D90E37F8-65CF-4052-8CD7-5C237E4015A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String", "String\String.csproj", "{DF7EE5CE-9E4F-4A38-8B03-8E294923132B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String", "..\String\String.csproj", "{DF7EE5CE-9E4F-4A38-8B03-8E294923132B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
