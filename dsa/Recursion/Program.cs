@@ -12,4 +12,8 @@
 // HouseRobberII.Solution([2, 3, 2]);
 // HouseRobberII.Solution([94,40,49,65,21,21,106,80,92,81,679,4,61,6,237,12,72,74,29,95,265,35,47,1,61,397,52,72,37,51,1,81,45,435,7,36,57,86,81,72]);
 
-GenerateParentheses.Solution(3);
+// GenerateParentheses.Solution(3);
+
+DecodingWays.Solution("226");
+// DecodingWays.Solution("27");
+// DecodingWays.Solution("111111111111111111111111111111111111111111111");
