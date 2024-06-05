@@ -58,6 +58,7 @@ public class HouseRobberII
         return Math.Max(picked, notPicked);
     }
 
+    // More efficient
     private static int FindMaxII(int[] nums, int ind, int n)
     {
         if (ind >= n) return 0;

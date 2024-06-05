@@ -42,8 +42,8 @@ public class DecodingWays
     public static void Solution(string encode)
     {
         int length = encode.Length;
-        int result = Decoder(encode, length - 1);
-        int result2 = DecoderII(encode, 0);
+        int result = encode[0] == '0' ? 0 : Decoder(encode, length - 1);
+        int result2 = encode[0] == '0' ? 0 : DecoderII(encode, 0);
         System.Console.WriteLine("{0}, {1}",result, result2);
     }
 
@@ -52,6 +52,7 @@ public class DecodingWays
     {
         // base condition
         if (ind <= 0) return 1;
+        
 
         int res = 0;
 

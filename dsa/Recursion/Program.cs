@@ -14,6 +14,8 @@
 
 // GenerateParentheses.Solution(3);
 
-DecodingWays.Solution("226");
+// DecodingWays.Solution("226");
 // DecodingWays.Solution("27");
 // DecodingWays.Solution("111111111111111111111111111111111111111111111");
+
+NQueen.Solution(4);
