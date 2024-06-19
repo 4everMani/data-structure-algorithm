@@ -23,22 +23,32 @@ public class NQueen
 {
     public static void Solution(int n)
     {
-        SolveNQueens(n);
+        var results = SolveNQueens(n);
+        foreach (var result in results) 
+        {
+            System.Console.WriteLine("-----------------------");
+            foreach(var item in result)
+            {
+                System.Console.WriteLine(item);
+            }
+        }
     }
 
     public static IList<IList<string>> SolveNQueens(int n) {
         IList<IList<string>> result = [];
-        List<string> board = [];
+        IList<string> board = [];
         string temp = new('.', n);
         for (int i = 1; i <= n; i++)
         {
             board.Add(temp);
         }
-        Helper(n, result, board, 0);
+        // Helper(n, result, board, 0);
+        HelperII(n, result, board, 0);
         return result;
     }
 
-    private static void Helper(int n, IList<IList<string>> result, List<string> board, int col)
+    // Column wise
+    private static void Helper(int n, IList<IList<string>> result, IList<string> board, int col)
     {
         if (col == n)
         {
@@ -63,7 +73,32 @@ public class NQueen
         }
     }
 
-    private static bool ValidConfig(List<string> board, int row, int col, int n)
+    private static void HelperII(int n, IList<IList<string>> result, IList<string> board, int row)
+    {
+        if (row == n) 
+        {
+            result.Add(new List<string>(board));
+            return;
+        }
+        for (int col = 0; col < n; col++)
+        {
+            if (ValidConfigII(board, row, col, n))
+            {
+                var str = new StringBuilder(board[row]);
+                str[col] = 'Q';
+                board[row] = str.ToString();
+
+                HelperII(n, result, board, row + 1);
+                
+                // backtracking
+                var rowString = new StringBuilder(board[row]);
+                rowString[col] = '.';
+                board[row] = rowString.ToString();
+            }
+        }
+    }
+
+    private static bool ValidConfig(IList<string> board, int row, int col, int n)
     {
         // check left horizontal
         for (int c = col - 1; c >= 0; c--)
@@ -84,4 +119,28 @@ public class NQueen
 
         return true;
     }
+
+    private static bool ValidConfigII(IList<string> board, int row, int col, int n)
+    {
+        // check left horizontal
+        for (int r = row - 1; r >= 0; r--)
+        {
+            if (board[r][col] == 'Q') return false;
+        }
+
+        // check top diagonally
+        for (int r = row - 1, c = col - 1 ; r >=0 && c >= 0 ; r--, c--)
+        {
+            if (board[r][c] == 'Q') return false;
+        }
+
+        for (int r = row - 1, c = col + 1; r >=0 && c < n; c++, r--)
+        {
+            if (board[r][c] == 'Q') return false;
+        }
+
+        return true;
+    }
+
+
 }

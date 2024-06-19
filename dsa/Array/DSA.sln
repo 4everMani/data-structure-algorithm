@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String", "..\String\String.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "..\Recursion\Recursion.csproj", "{3CBEF6FA-B86B-415C-A6A2-6C6C75EF27B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backtracking", "..\Backtracking\Backtracking.csproj", "{1F50E939-B7BA-4A6C-9405-FFC309D8D6D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DP", "..\DP\DP.csproj", "{4B19E996-7375-4084-949A-98FA4760FF7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{3CBEF6FA-B86B-415C-A6A2-6C6C75EF27B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CBEF6FA-B86B-415C-A6A2-6C6C75EF27B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CBEF6FA-B86B-415C-A6A2-6C6C75EF27B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F50E939-B7BA-4A6C-9405-FFC309D8D6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F50E939-B7BA-4A6C-9405-FFC309D8D6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F50E939-B7BA-4A6C-9405-FFC309D8D6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F50E939-B7BA-4A6C-9405-FFC309D8D6D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B19E996-7375-4084-949A-98FA4760FF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B19E996-7375-4084-949A-98FA4760FF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B19E996-7375-4084-949A-98FA4760FF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B19E996-7375-4084-949A-98FA4760FF7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

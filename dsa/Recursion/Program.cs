@@ -18,4 +18,8 @@
 // DecodingWays.Solution("27");
 // DecodingWays.Solution("111111111111111111111111111111111111111111111");
 
-NQueen.Solution(4);
+// NQueen.Solution(4);
+
+Combinations.Solution(4, 2);
+
+// LetterCombination.Solution("23");
