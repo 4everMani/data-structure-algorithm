@@ -30,7 +30,9 @@ public class LongestCommonSubsequence
     
     public static void Solution(string text1, string text2)
     {
-        System.Console.WriteLine(FindLongestCommonSubsequence(text1, text2));
+        // System.Console.WriteLine(FindLongestCommonSubsequence(text1, text2));
+        // System.Console.WriteLine(FindLCS(text1, text2));
+        System.Console.WriteLine(OptimizedCode(text1, text2));
     }
 
     public static int FindLongestCommonSubsequence(string text1, string text2) {
@@ -60,9 +62,66 @@ public class LongestCommonSubsequence
             return dp[ind1][ind2] = Math.Max(Helper(text1, text2, ind1 + 1, ind2, dp), Helper(text1, text2, ind1, ind2 + 1, dp));
         }
     }
+
+    // iterative solution
+    private static int FindLCS(string text1, string text2)
+    {
+        int n = text1.Length;
+        int m = text2.Length;
+
+        int[][] dp = new int[n + 1][];
+        for (int i = 0; i <= n; i++)
+        {
+            dp[i] = new int[m + 1];
+            Array.Fill(dp[i], 0);
+        }
+
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= m; j++)
+            {
+                if (text1[i - 1] == text2[j - 1])
+                {
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                }
+                else
+                {
+                    dp[i][j] = Math.Max(dp[i][j - 1], dp[i - 1][j]);
+                }
+            }
+        }
+        return dp[n][m];
+    }
+
+    private static int OptimizedCode(string text1, string text2)
+    {
+        int n = text1.Length;
+        int m = text2.Length;
+        int[] prevArr = new int[m + 1];
+        Array.Fill(prevArr, 0);
+        int[] currArr = new int[m + 1];
+        Array.Fill(currArr, 0);
+
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= m; j++)
+            {
+                if (text1[i - 1] == text2[j - 1])
+                {
+                    currArr[j] = 1 + prevArr[ j - 1];
+                }
+                else
+                {
+                    currArr[j] = Math.Max(currArr[j - 1], prevArr[j]);
+                }
+            }
+
+            for (int j = 1; j <= m; j++)
+            {
+                prevArr[j] = currArr[j];
+                currArr[j] = 0;
+            }
+        }
+        return prevArr[m];
+    }
 }
-
-
-
-
-
