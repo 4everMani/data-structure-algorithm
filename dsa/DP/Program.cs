@@ -2,4 +2,6 @@
 
 // FibonacciNumber.Solution(3);
 
-LongestCommonSubsequence.Solution("ezupkr", "ubmrapg");
+// LongestCommonSubsequence.Solution("ezupkr", "ubmrapg");
+
+WildCardMatching.Solution("Manish", "Manish*");
