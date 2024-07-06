@@ -4,4 +4,8 @@
 
 // LongestCommonSubsequence.Solution("ezupkr", "ubmrapg");
 
-WildCardMatching.Solution("Manish", "Manish*");
+// WildCardMatching.Solution("Manish", "Manish*");
+
+// RegularExpressionMatching.Solution("aa", "a*");
+
+PalindromicSubstrings.Solution("abc");

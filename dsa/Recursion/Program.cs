@@ -20,6 +20,8 @@
 
 // NQueen.Solution(4);
 
-Combinations.Solution(4, 2);
+// Combinations.Solution(4, 2);
 
 // LetterCombination.Solution("23");
+
+StringToInterger.Solution("words and 987");
