@@ -24,4 +24,12 @@
 
 // LetterCombination.Solution("23");
 
-StringToInterger.Solution("words and 987");
+// StringToInterger.Solution("words and 987");
+
+// CountGoodNumbers.Solution(50);
+
+// SortAStack.Solution();
+
+// ReverseAStack.Solution();
+
+GenerateAllBinaryString.Solution(4);
