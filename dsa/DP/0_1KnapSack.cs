@@ -60,4 +60,39 @@ public class _0_1KnapSack
         }
         return 0;
     }
+
+#region memozed solution
+    private static int MemoizedSolution(int[] weight, int[] values, int capacity, int n)
+    {
+        var dp = new int[n + 1][];
+        
+        for (int i = 0; i < n + 1; i++)
+        {
+            dp[i] = new int[capacity + 1];
+            Array.Fill(dp[i], -1);
+        }
+        return FindMaxProfit(weight, values, capacity, n, dp);
+    }
+
+    private static int FindMaxProfit(int[] weight, int[] values, int capacity, int n, int[][] output)
+    {
+        if (n == 0 || capacity == 0) return 0;
+
+        else if (output[n][capacity] != -1) return output[n][capacity];
+
+        else if (capacity >= weight[n - 1])
+        {
+            return output[n][capacity] = Math.Max(values[n-1] + FindMaxProfit(weight, values, capacity - weight[n - 1], n - 1, output), 
+            FindMaxProfit(weight, values, capacity, n - 1, output));
+        }
+        else if (capacity < weight[n - 1])
+        {
+            return output[n][capacity] = FindMaxProfit(weight, values, capacity, n - 1, output);
+        }
+        return 0;
+    }
+
+#endregion
+
+
 }
