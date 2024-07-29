@@ -37,6 +37,7 @@ public class _0_1KnapSack
     public static void Solution(int[] weight, int[] values, int capacity, int n)
     {
         Console.WriteLine(RecursiveSolution(weight, values, capacity, n));
+        Console.WriteLine(TopDownSolution(weight, values, n, capacity));
     }
 
     private static int RecursiveSolution(int[] weight, int[] values, int capacity, int n)
@@ -82,8 +83,9 @@ public class _0_1KnapSack
 
         else if (capacity >= weight[n - 1])
         {
-            return output[n][capacity] = Math.Max(values[n-1] + FindMaxProfit(weight, values, capacity - weight[n - 1], n - 1, output), 
-            FindMaxProfit(weight, values, capacity, n - 1, output));
+            return output[n][capacity] = Math.Max(
+                values[n-1] + FindMaxProfit(weight, values, capacity - weight[n - 1], n - 1, output), 
+                FindMaxProfit(weight, values, capacity, n - 1, output));
         }
         else if (capacity < weight[n - 1])
         {
@@ -92,6 +94,42 @@ public class _0_1KnapSack
         return 0;
     }
 
+#endregion
+
+#region  Top-Down Approach
+
+    public static int TopDownSolution(int[] wt, int[]vt, int n, int w)
+    {
+        var dp = new int[n + 1][];
+        for (int i = 0; i < dp.Length; i++)
+        {
+            dp[i] = new int[w + 1];
+        }
+
+        // Initializing dp
+        Array.Fill(dp[0], 0);
+        
+        for (int i = 0; i < dp.Length; i++)
+        {
+            dp[i][0] = 0;
+        }
+
+        for (int i = 1; i < dp.Length; i++)
+        {
+            for (int j = 1; j < dp[0].Length; j++)
+            {
+                if (wt[i - 1] <= j)
+                {
+                    dp[i][j] = Math.Max(vt[i - 1] + dp[i - 1][j - wt[i - 1]], dp[i - 1][j]);
+                }
+                else if(wt[i - 1] > j)
+                {
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+        return dp[n][w];
+    }
 #endregion
 
 
